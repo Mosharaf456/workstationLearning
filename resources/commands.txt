@@ -1,0 +1,55 @@
+Virtual environment 
+- dependency isolation -- separate/isolate dependecny to remove conflit from other package of pc or software.
+- Version control -- libraries version maintain 
+- Reproductibility -- env to env transfer -- to reproduce same env when transfer one os to another os
+> sudo apt install python3.10-venv
+> python -m venv foldername
+or 
+> python3 -m venv foldername
+
+> python3 -m venv venv
+
+/// then active venv  
+> source venv/bin/activate
+NOTE: need to ensure venv activated by yourself
+cause: django project created , install, inside venv 
+if you close terminal then reopen must re activate venv 
+django run actually inside venv  
+after actived , you can run project or install any packages. 
+all managed from venv.
+
+    First, check if pip is installed:
+
+bash
+
+python3 -m pip --version
+
+    If pip is installed, install Django using:
+
+bash
+
+python3 -m pip install django
+    verify Django is installed by running:
+
+bash
+
+> python3 -m django --version
+mosharaf@pop-os:~$ python3 -m django --version
+5.2.1
+mosharaf@pop-os:~$ python3 --version
+Python 3.10.12
+
+pip install django
+> pip3 install django
+
+// project created
+
+> django-admin startproject config .
+
+// project run
+> python manage.py runserver
+or 
+> python3 manage.py runserver
+
+
+
